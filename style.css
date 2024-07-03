@@ -50,6 +50,14 @@ ul li:hover a{
 .search_bar{
     /* padding-top: 1rem; */
     padding:10px 1rem 0rem 7rem;
+    width: 38%;
+}
+.fa_sharp{
+    background-color: white;
+    height: 23px;
+    position:relative;
+    top:30px;
+    left: 33px;
 }
 .search_bar input[type="search"]{
     border-radius: 11px;
@@ -57,6 +65,7 @@ ul li:hover a{
     border-width: 0px;
     height: 34px;
     margin-bottom:10px;
+    width: 100%;
 }
 .nav-items{
     width:40%
@@ -289,7 +298,7 @@ footer{
 }
 /* querymedia of stylel.css */
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width:600px ) {
     /* body {
        background-color:rgb(31, 32, 34) 
     } */
@@ -303,20 +312,27 @@ footer{
         text-align: center;
         padding-top: 1rem;
       }
-      /* menu bar design started */
+    
     .response{
           font-size: 63px;
       }
       .nav-items {
           display: none;
         }
-
+        .search_bar {
+            padding: 13px 1rem 0rem 1rem;
+            width: 100%;
+          }
         #toggle:checked + .nav-items{
             display: block;
        }
-
-        /* menu bar design ended */
-
+       .search_bar input[type="search"] {
+           width: 100%;
+      }
+      .fa_sharp{
+        position: relative;
+        top: 32px;
+      }
       .response{
         cursor: pointer;
         display: block;
@@ -331,10 +347,13 @@ footer{
     display: flex;
     flex-wrap: wrap;
     padding-top: 1rem;
+    flex-direction: column;
 }
 .nav-items ul li{
   padding: 2%;
   font-size: 12px;
+  font-size: 15px;
+  text-align: center;
 }
 .container_img {
   height: 27vh;
@@ -350,6 +369,7 @@ font-size: 41px;
     margin-right: -10%;
     position: relative;
     left: -51px;
+    padding-left: 25px;
 }
 .first-content{
     display: flex;
@@ -446,3 +466,36 @@ font-size: 12px;
     width: 78%;
   }
   }
+
+@media screen and (min-width:601px) and (max-width:810px){
+    .search_bar {
+        padding: 2px 1rem 0rem 1rem;
+        width: 100%;
+      }
+      header nav {
+        display: flex;
+        background-color: rgb(15, 16, 92);
+        width: 100%;
+        flex-direction: column;
+      }
+      .nav-items {
+        width: 100%;
+      }
+      .nav-items ul {
+        margin:40px 15px;
+        display: none;
+      }
+      .logo {
+        display: flex;
+        justify-content: center;
+      }
+      .response{
+        display: block;
+        font-size: 63px;
+        transform: translatey(-23px);
+      }
+      #toggle:checked + .nav-items ul{
+        display: block;
+        display: flex;
+   }
+}
