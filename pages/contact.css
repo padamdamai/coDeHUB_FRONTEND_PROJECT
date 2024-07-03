@@ -1,0 +1,344 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* --------------------------navbar styling  start*-------------------------------------------/
+
+a{
+    text-decoration: none;
+    color:white
+}
+
+video{
+max-width: 50%;
+height: 14rem;
+}
+.logo{
+    font-family: monospace;
+    font-size: 2.5rem;
+    padding-left: 10px;
+    /* margin-top: -9vh; 
+}
+    */
+header{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+nav{
+    position: fixed;
+    z-index: 5;
+}
+header nav{
+    display: flex;
+    background-color: rgb(15, 16, 92);
+    width: 100%;
+}
+.nav-items ul{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 1rem;
+    margin-left: 3rem;
+}
+.nav-items ul li{
+    list-style: none;
+    color:rgb(231, 222, 222);
+}
+ul li:hover a{
+    font-size: 14px;
+}
+.search_bar{
+    /* padding-top: 1rem; */
+    padding:10px 1rem 0rem 7rem;
+}
+.search_bar input[type="search"]{
+    border-radius: 11px;
+    text-align: center;
+    border-width: 0px;
+    height: 34px;
+    margin-bottom:10px;
+}
+.nav-items{
+    width:40%
+}
+/* navbar styling ended */
+.contact_us{
+    background-color:#590b59;
+    color: white;
+    border-radius: 12px 12px 0px 0px ;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+.contact_view{
+    font-size: 3rem;
+    padding-left: 21vw;
+}
+.description_contact{
+    padding: 1rem 0px 1rem 17rem;
+}
+.container_contact{
+    padding: 3%;
+}
+.form_image_divison{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+.form_contents{
+    display: flex;
+}
+form{
+    height: 86vh;
+    width: 37vw;
+    background-color: white;
+    position: relative;
+    top: -6rem;
+    left: 10vw;
+    box-shadow: 10px 10px 38px;
+    border-radius: 21px;
+    position: relative;
+}
+.image_division{
+    display: flex;
+    max-width: 61%; 
+    flex-wrap: wrap;
+}
+.firstimage{
+border-radius: 34% 34% 100% 100%;
+}
+.secondimage{
+    border-radius: 32% 32% 44%;
+}
+.thirdimage{
+    border-radius: 32% 32% 44%;
+}
+.forthimage{
+    border-radius: 32% 32% 44%;
+}
+.input_data input{
+    height: 41px;
+    width: 101%;
+    border-radius: 12px;
+    outline: none;
+    padding-left: 17px;
+    margin-top: 1rem;
+}
+
+.input_data{
+    padding: 51px;
+    z-index: -1;
+    
+}
+
+.full_name{
+    position: absolute;
+    top: 12.7vh;
+    left: 95px;
+    padding-left:2rem;
+    color: rgb(124, 120, 120);
+}
+input:focus{
+    border: 2px solid green;
+}
+/* using focus with adjacent combinators */
+.input_data input[type='text']:focus ~ div{
+   transform: translate(-40px,-22px) scale(0.88);
+    z-index:1;
+    color: green;
+    margin-left: 20%;
+    text-align: center;
+    padding-left: 0px;
+    background-color: honeydew;
+}
+.address{
+    position: absolute;
+    top: 25px;
+    left: 60px;
+    color: rgb(124, 120, 120);
+
+  }
+/* .full_name {
+  position: absolute;
+  top: 13vh;
+  left: 74px;
+} */
+.phone{
+    width: 43%;
+    position: absolute;
+    top:4vh;
+    left: 74px;
+    color: rgb(124, 120, 120);
+
+}
+.email{
+    width: 39%;
+    position: absolute;
+    top:4vh;
+    left: 74px;
+    color: rgb(124, 120, 120);
+
+}
+.input_data input[type='tel']:focus ~ div{
+    transform: translate(-40px,-22px) scale(0.88);
+     color: green;
+     margin-left: 20%;
+     text-align: center;
+     padding-left: 0px;
+     background-color: honeydew;
+ }
+ textarea:focus{
+    border: 2px solid green;
+    
+ }
+
+ textarea{
+    margin-top: 3vh;
+    outline: none;
+    border-radius: 12px;
+    font-size: 15px;
+ }
+ .submit_form{
+    background-color: green;
+    color:white;
+ }
+
+ /* form second division  start*/
+ .image_container img{
+  width: 47vw;
+  border-radius: 125px 26px 278px 79px;
+  margin-top: -22vh;
+}
+.message{
+    position: absolute;
+    top: 28px;
+    left: 120px;
+    color: rgb(124, 120, 120);
+
+}
+textarea:focus ~ .message{
+    transform: translate(-50px,-22px) scale(0.88);
+    z-index:1;
+    color: green;
+    margin-left: 20%;
+    text-align: center;
+    padding-left: 0px;
+    background-color: honeydew;
+}
+ /* form second division end */
+
+ @media screen and (max-width: 480px) {
+    .container_contact {
+        position: relative;
+        padding: 0px;
+        margin-top: 19vh;
+      }
+      .description_contact {
+        padding: 1rem 0px 1rem 3rem;
+      }
+      .form_image_divison{
+        display: flex;
+        flex-direction: column;
+      }
+      form {
+        height: auto;
+        width: 83vw;
+        top: -6rem;
+        left: 8vw;
+      }
+      .input_data input {
+        width: 17rem;
+      }
+      .input_data {
+        padding: 45px;
+      }
+      .input_data input {
+        height: 38px;
+        margin-left: -1rem;
+      }
+      .address{
+        position: absolute;
+        top: 25px;
+        left: 60px;
+        
+      }
+      .phone,.email{
+        transform: translate(0%,-25%);
+        width: 20%;
+        }
+        .phone{
+            width: 30%;
+
+        }
+    .full_name {
+      position: absolute;
+      top: 8vh;
+      left: 74px;
+    }
+    .display_YorN{
+        display: none;
+    }
+    .input_data input[type='tel']:focus ~ div{
+        transform: translate(-63px,-23px) scale(0.88);
+        width: 5rem;
+
+     }
+     .input_data input[type='email']:focus ~ div{
+        transform: translate(-70px,-35px) scale(0.88);
+     }
+     .contact_us {
+        margin: 14px;
+      }
+      textarea {
+        width: 17rem;
+        margin-left: -1rem;
+      }
+      .message {
+        position: absolute;
+        top: 70px;
+        left: 69px;
+      }
+      textarea:focus ~ .message{
+        transform: translate(-50px,-58px) scale(0.88);
+    }
+    .image_division{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 372px) {
+    .form_image_divison {
+        margin-top: 4rem;
+      }
+      .input_data input {
+        width: auto;
+      }
+      .phone,.email{
+        width: 5rem;
+        margin-left: -2rem;
+      }
+      .input_data input[type='tel']:focus ~ div{
+        transform: translate(-80px,-20px) scale(0.88);
+        width: 5rem;
+     }
+     .input_data input[type='email']:focus ~ div{
+        transform: translate(-40px,-32px) scale(0.88);
+     }
+
+     textarea {
+        width: 14rem;
+      }
+      .us_display{
+        display: none;
+      }
+      textarea {
+        width: 12rem;
+      }
+      .image_division{
+        display: none;
+      }
+}
