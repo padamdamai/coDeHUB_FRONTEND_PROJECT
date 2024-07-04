@@ -344,6 +344,12 @@ textarea:focus ~ .message{
 }
 
 @media screen and (min-width:976px) and (max-width:1269px){
+  .container_contact {
+    padding: 7% 5%;
+  }
+  .description_contact {
+    padding: 1rem 0px 1rem 14rem;
+  }
   .image_container img {
     margin-top: -11vh;
     padding: 26px;
