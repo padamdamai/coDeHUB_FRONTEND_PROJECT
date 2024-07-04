@@ -47,16 +47,16 @@ header nav{
 ul li:hover a{
     font-size: 14px;
 }
-.search_bar{
-    /* padding-top: 1rem; */
-    padding:10px 1rem 0rem 7rem;
-    width: 38%;
+.search_bar {
+  padding: 18px 1rem 0px 7rem;
+  width: 38%;
+  display: flex;
 }
 .fa_sharp{
     background-color: white;
     height: 23px;
     position:relative;
-    top:30px;
+    top:9px;
     left: 33px;
 }
 .search_bar input[type="search"]{
@@ -298,7 +298,7 @@ footer{
 }
 /* querymedia of stylel.css */
 
-@media screen and (max-width:600px ) {
+@media screen and (max-width:700px ) {
     /* body {
        background-color:rgb(31, 32, 34) 
     } */
@@ -320,7 +320,7 @@ footer{
           display: none;
         }
         .search_bar {
-            padding: 13px 1rem 0rem 1rem;
+            padding: 2px 3.5rem 0rem 3.5rem;
             width: 100%;
           }
         #toggle:checked + .nav-items{
@@ -331,7 +331,7 @@ footer{
       }
       .fa_sharp{
         position: relative;
-        top: 32px;
+        top: 11px;
       }
       .response{
         cursor: pointer;
@@ -366,7 +366,7 @@ font-size: 41px;
 }
 .enhance,.your_learn{
     text-align: center;
-    margin-right: -10%;
+    margin-right: -4%;
     position: relative;
     left: -51px;
     padding-left: 25px;
@@ -456,10 +456,10 @@ font-size: 12px;
   .about_gif_right{
     margin-top: 21px;
   }
-  .abot_img img{
+  /* .abot_img img{
     height: auto;
     width: 23%;
-  }
+  } */
   .abot_img img {
     height: auto;
     padding-left: 29px;
@@ -467,10 +467,10 @@ font-size: 12px;
   }
   }
 
-@media screen and (min-width:601px) and (max-width:810px){
+@media screen and (min-width:701px) and (max-width:1265px){
     .search_bar {
-        padding: 2px 1rem 0rem 1rem;
-        width: 100%;
+      padding: 2px 4rem 0rem 25%;
+    width: 82%;
       }
       header nav {
         display: flex;
@@ -482,8 +482,9 @@ font-size: 12px;
         width: 100%;
       }
       .nav-items ul {
-        margin:40px 15px;
+        margin: 40px 15px;
         display: none;
+        padding: 0px 22%;
       }
       .logo {
         display: flex;
@@ -498,4 +499,48 @@ font-size: 12px;
         display: block;
         display: flex;
    }
+.top_text{
+  padding: 56px 67px 23px 69px;
+  font-size: 35px;
+}
+.botton_text {
+  width: 56vw;
+  padding: 32px;
+}
+.abot_img img {
+  height: auto;
+  margin-left: -63px;
+  width: 100%;
+} 
+.about_container{
+  display: flex;
+  justify-content:center;
+}
+.content-holder {
+  max-width: 45%;
+}
+.about_gif_right{
+width: 35%;
+margin-left: -44px;
+}
+.connect_with_us {
+  margin-left: 50%;
+}
+.texts {
+  font-size: 6vh;
+}
+.first-content {
+  display: flex;
+  flex-direction: row;
+}
+.image-holder img {
+  width: 100%;
+}
+.course {
+  padding-top: 5vh;
+}
+.status_items_holder {
+  display: flex;
+  justify-content: space-around;
+}
 }
