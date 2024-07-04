@@ -93,7 +93,7 @@ ul li:hover a{
     display: flex;
 }
 form{
-    height: 86vh;
+    height: auto;
     width: 37vw;
     background-color: white;
     position: relative;
@@ -137,7 +137,7 @@ border-radius: 34% 34% 100% 100%;
 
 .full_name{
     position: absolute;
-    top: 12.7vh;
+    top:13vh;
     left: 95px;
     padding-left:2rem;
     color: rgb(124, 120, 120);
@@ -162,11 +162,6 @@ input:focus{
     color: rgb(124, 120, 120);
 
   }
-/* .full_name {
-  position: absolute;
-  top: 13vh;
-  left: 74px;
-} */
 .phone{
     width: 43%;
     position: absolute;
@@ -215,7 +210,7 @@ input:focus{
 }
 .message{
     position: absolute;
-    top: 28px;
+    top: 25px;
     left: 120px;
     color: rgb(124, 120, 120);
 
@@ -231,11 +226,17 @@ textarea:focus ~ .message{
 }
  /* form second division end */
 
- @media screen and (max-width: 480px) {
+ @media screen and (max-width:700px) {
     .container_contact {
         position: relative;
         padding: 0px;
         margin-top: 19vh;
+      }
+      .email {
+        width: 39%;
+        position: absolute;
+        top: 2.5vh;
+        left: 74px;
       }
       .description_contact {
         padding: 1rem 0px 1rem 3rem;
@@ -258,7 +259,7 @@ textarea:focus ~ .message{
       }
       .input_data input {
         height: 38px;
-        margin-left: -1rem;
+        width: 100%;
       }
       .address{
         position: absolute;
@@ -266,18 +267,14 @@ textarea:focus ~ .message{
         left: 60px;
         
       }
-      .phone,.email{
-        transform: translate(0%,-25%);
-        width: 20%;
-        }
         .phone{
             width: 30%;
-
+            margin-top:-39px;
         }
     .full_name {
       position: absolute;
-      top: 8vh;
-      left: 74px;
+    top: 6.7vh;
+    left: 74px;
     }
     .display_YorN{
         display: none;
@@ -295,11 +292,11 @@ textarea:focus ~ .message{
       }
       textarea {
         width: 17rem;
-        margin-left: -1rem;
+        margin-left: 1rem;
       }
       .message {
         position: absolute;
-        top: 70px;
+        top: 78px;
         left: 69px;
       }
       textarea:focus ~ .message{
@@ -310,35 +307,72 @@ textarea:focus ~ .message{
     }
 }
 
-@media screen and (max-width: 372px) {
-    .form_image_divison {
-        margin-top: 4rem;
-      }
-      .input_data input {
-        width: auto;
-      }
-      .phone,.email{
-        width: 5rem;
-        margin-left: -2rem;
-      }
-      .input_data input[type='tel']:focus ~ div{
-        transform: translate(-80px,-20px) scale(0.88);
-        width: 5rem;
-     }
-     .input_data input[type='email']:focus ~ div{
-        transform: translate(-40px,-32px) scale(0.88);
-     }
+@media screen and (min-width:701px) and (max-width:975px){
+  .image_division {
+    display: none;
+  }
+  .form_division{
+    margin-left: -22%;
+  }
+  .description_contact {
+    padding: 1rem 0px 1rem 23%;
+  }
+  .form_image_divison {
+    display: flex;
+    justify-content: center;
+  }
+  form {
+    width:100%;
+  }
+  .full_name {
+    position: absolute;
+    top: 7.3vh;
+  }
+  .phone {
+    position: absolute;
+    top: 2.6vh;
+  }
+  .email {
+    position: absolute;
+    top: 2.3vh;
+    left: 74px;
+  }
+  .message {
+    position: absolute;
+    top: 41px;
+  }
+}
 
-     textarea {
-        width: 14rem;
-      }
-      .us_display{
-        display: none;
-      }
-      textarea {
-        width: 12rem;
-      }
-      .image_division{
-        display: none;
-      }
+@media screen and (min-width:976px) and (max-width:1269px){
+  .image_container img {
+    margin-top: -11vh;
+    padding: 26px;
+  }
+  .full_name {
+    position: absolute;
+    top: 4.3vh;
+    left: 121px;
+  }
+  .phone {
+    position: absolute;
+    top: 1.5vh;
+  }
+    .email {
+    position: absolute;
+    top: 1.5vh;
+    left: 74px;
+  }
+  form {
+    position: relative;
+    width: 100%;
+    top: -6rem;
+    left: 2vw;
+  }
+  .input_data {
+    padding: 44px;
+  }
+  .message {
+    position: absolute;
+    top: 58px;
+  }
 }
