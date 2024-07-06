@@ -224,19 +224,94 @@ textarea:focus ~ .message{
     padding-left: 0px;
     background-color: honeydew;
 }
+input::placeholder{
+  color: transparent;
+}
+textarea::placeholder{
+  color: transparent;
+  text-align: center;
+}
  /* form second division end */
+@media screen and (min-width:200px) and (max-width:461px){
+  .image_division {
+    display: none;
+  }
+  .container_contact {
+    margin-top: 27px;
+  }
+  .description_contact {
+    padding: 15px 12%;
+  }
+  .contact_view {
+    font-size: 2rem;
+  }
+  .response{
+    font-size: 37px;
+    margin-left: -11px;
+    background-color: black;
+  }
+  .logo  h4 a{
+    font-size: 28px
+  }
+  form {
+    width: 99.9%;
+    position: relative;
+    top: -6rem;
+    margin: -2% -11%;
+  }
+  .form_division{
+    width: 100%;
+  }
+  textarea {
+    width: 100%;
+  }
+  .icons_btn {
+    width: 5rem;
+  }
+  .container_footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .left_side{
+    width: 100%;
+    padding: 4% 21%;
+  }
+.right_side {
+  max-width: 100%;
+  padding: 37px 2px;
+}
+.contents{
+  width: 230%;
+  position: relative;
+  left: -69%;
+}
+.display_YorN{
+  display: none;
+}
+.hello{
+  display: none;
+}
+input::placeholder{
+  color: black;
+}
+textarea::placeholder{
+  color: black;
+}
+}
 
- @media screen and (max-width:700px) {
+
+@media screen and (min-width:462px) and (max-width:700px) {
+  .form_division {
+    margin-left: -22%;
+    padding-top: 36px;
+  }
+  .message_content{
+    padding-right: 12%;
+  }
     .container_contact {
         position: relative;
         padding: 0px;
-        margin-top: 19vh;
-      }
-      .email {
-        width: 39%;
-        position: absolute;
-        top: 2.5vh;
-        left: 74px;
+        margin-top:9vh;
       }
       .description_contact {
         padding: 1rem 0px 1rem 3rem;
@@ -244,12 +319,11 @@ textarea:focus ~ .message{
       .form_image_divison{
         display: flex;
         flex-direction: column;
+        padding: 15%;
+        margin: -124px 9px;
       }
       form {
-        height: auto;
-        width: 83vw;
-        top: -6rem;
-        left: 8vw;
+        width:100%;
       }
       .input_data input {
         width: 17rem;
@@ -261,49 +335,38 @@ textarea:focus ~ .message{
         height: 38px;
         width: 100%;
       }
-      .address{
-        position: absolute;
-        top: 25px;
-        left: 60px;
-        
-      }
-        .phone{
-            width: 30%;
-            margin-top:-39px;
-        }
-    .full_name {
-      position: absolute;
-    top: 6.7vh;
-    left: 74px;
-    }
     .display_YorN{
         display: none;
     }
     .input_data input[type='tel']:focus ~ div{
-        transform: translate(-63px,-23px) scale(0.88);
+        transform: translate(-50%,-23px) scale(0.88);
         width: 5rem;
 
      }
      .input_data input[type='email']:focus ~ div{
-        transform: translate(-70px,-35px) scale(0.88);
+        transform: translate(-50%,-35px) scale(0.88);
      }
      .contact_us {
         margin: 14px;
       }
       textarea {
-        width: 17rem;
-        margin-left: 1rem;
+        width:100%;
+        margin-left: 1%;
       }
-      .message {
-        position: absolute;
-        top: 78px;
-        left: 69px;
+      .hello{
+        display: none;
       }
       textarea:focus ~ .message{
         transform: translate(-50px,-58px) scale(0.88);
     }
     .image_division{
         display: none;
+    }
+    input::placeholder{
+      color: black;
+    }
+    textarea::placeholder{
+      color: black;
     }
 }
 
@@ -324,48 +387,44 @@ textarea:focus ~ .message{
   form {
     width:100%;
   }
-  .full_name {
-    position: absolute;
-    top: 7.3vh;
-  }
-  .phone {
-    position: absolute;
-    top: 2.6vh;
-  }
-  .email {
-    position: absolute;
-    top: 2.3vh;
-    left: 74px;
-  }
-  .message {
-    position: absolute;
-    top: 41px;
-  }
+.hello{
+  display:none;
+}
+input::placeholder{
+  color: black;
+}
+textarea::placeholder{
+  color: black;
+}
 }
 
-@media screen and (min-width:976px) and (max-width:1269px){
+@media screen and (min-width:976px) and (max-width:1264px){
   .container_contact {
     padding: 7% 5%;
   }
   .description_contact {
-    padding: 1rem 0px 1rem 14rem;
-  }
+  padding: 1rem 0px 1rem 11rem;
+}
   .image_container img {
     margin-top: -11vh;
     padding: 26px;
   }
+  .image_division {
+    max-width: 31%;
+    margin-right:16%;
+  }
   .full_name {
     position: absolute;
-    top: 4.3vh;
+    top:6.6vh;
     left: 121px;
   }
   .phone {
     position: absolute;
-    top: 1.5vh;
+    top:2.5vh;
   }
     .email {
     position: absolute;
-    top: 1.5vh;
+    top:2.4vh;
     left: 74px;
   }
   form {
@@ -379,6 +438,6 @@ textarea:focus ~ .message{
   }
   .message {
     position: absolute;
-    top: 58px;
+    top: 38px;
   }
 }
