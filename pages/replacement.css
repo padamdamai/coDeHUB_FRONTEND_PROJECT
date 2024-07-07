@@ -143,3 +143,111 @@
     height: auto;
     color:#d5c1c1;;
 }
+
+@media screen and (min-width:200px) and (max-width:461px){
+    *{
+        overflow-x:clip;
+    }
+    .exciting_job_intern{
+        display: flex;
+    flex-direction: column;
+    position: relative;
+    height: auto;
+    padding: 3% 0px;
+    width: 100%;
+    }
+    .replacement_header_content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        padding: 30% 0%;
+        margin-left: 2%;
+      }
+      .replacement_content{
+        font-size: 43px;
+        width: 94%;
+        padding: 3% 4%;
+        text-align: center;
+      }
+      .replacement_wk img {
+        position: absolute;
+        top: 46%;
+        left: 51%;
+        height: 33%;
+        width: 40%;
+      }
+      .content_short {
+        width: 48%;
+        padding-top: 31px;
+        font-size: 14px;
+      }
+      .replacement_company{
+        margin-top: -23rem;
+      }
+      .heading_repl_company{
+        font-size: 28px;
+      }
+      .company_logo{
+        height: auto;
+        width: 100%;;
+        padding: 0px;
+      }
+      .company_logo img{
+        padding: 55px;
+      }
+      .exciting_job_intern{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        height:auto;
+      }
+      .repo{
+        position: relative;
+        margin-top: 1%;
+      }
+      .exciting_heading{
+        font-size: 22px;
+        width: 91%;
+        margin-left: 7%;
+      }
+
+      .left_content_exciting {
+        height: auto;
+        color: #d5c1c1;
+        width: 82%;
+        text-align: justify;
+        margin-top: 0%;
+      }
+      .center_content_exciting{
+        width: 83%;
+        text-align: justify;
+        margin-top: -3%;
+        padding-right: 0%;
+      }
+      .right_exciting{
+        text-align: justify;
+        margin-top: 18%;
+        margin-top: -3%;
+      }
+      .replaced_student {
+        font-size: 24px;
+      }
+      .replaced_std_card_container{
+        padding:5px 0px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    
+    }
+    .img_replaced_holder{
+        width: 33%;
+        height: 11vh;
+    }
+    .img_replaced_holder img{
+        padding: 2px;
+    }
+    .replaced_student{
+        display: none;
+    }
+}

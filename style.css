@@ -498,7 +498,7 @@ font-size: 12px;
       #toggle:checked + .nav-items ul{
         display: block;
         display: flex;
-   }
+     }
 .top_text{
   padding: 56px 67px 23px 69px;
   font-size: 35px;
