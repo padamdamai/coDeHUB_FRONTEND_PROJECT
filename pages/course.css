@@ -113,3 +113,198 @@ font-size: 43px;
     padding: 23px;
     opacity: 0.88;
 }
+
+@media screen and (min-width:200px) and (max-width:363px){
+    .logo {
+        font-size: 1.5rem;
+      }
+      .response {
+        cursor: pointer;
+        display: block;
+        font-size: 51px;
+        position: absolute;
+        top: 20px;
+        right: -10px;
+      }
+    .course_banner_container {
+        margin-top:5rem;
+        height: 28vh;
+      }
+      .course_top_para > div {
+        font-size: 17px;
+        width: 89%;
+        text-align: center;
+      }
+      .breakdown{
+        display: none;
+      }
+      .btn_group > div {
+        height: 3vh;
+        font-size: 12px;
+        width: 33%;
+        padding: 4%;
+        margin-left: -3%;
+      }
+      .content_down {
+        margin-left: -45%;
+      }
+      .course_top_para {
+        margin-top: -7%;
+      }
+      .course_top_para:hover{
+        background-color:black;
+        opacity: 0.8;
+        color:whitesmoke;
+        text-shadow: none;
+        margin-top: 0%;
+    }
+    .all_courses {
+        padding-top: 10vh;
+      }
+      .courses_title {
+        font-size: 29px;
+      }
+      .course_viewDetails{
+        padding: 4px;
+        font-size: 17px;
+        margin-top:-2%;
+      }
+      .course_download{
+        padding: 1px;
+        font-size: 17px;
+      }
+       .course_topic img {
+        width: 15rem;
+      }
+      .icons_btn span{
+        padding-right: 32px;
+      }
+}
+
+@media screen and (min-width:364px) and (max-width:700px){
+    .course_banner_container {
+        margin-top: 6.9rem;
+        height: 28vh;
+      }
+      .course_top_para > div {
+        font-size: 21px;
+      }
+      .btn_group > div {
+        height: 4vh;
+        font-size: 15px;
+      }
+      .content_down{
+        margin-left: -12%;
+      }
+      .course_top_para {
+        margin-top: -7%;
+      }
+      .course_top_para:hover{
+        background-color:black;
+        opacity: 0.8;
+        color:whitesmoke;
+        text-shadow: none;
+        margin-top: 0%;
+    }
+    .all_courses {
+        padding-top: 10vh;
+      }
+      .courses_title {
+        font-size: 29px;
+      }
+      .course_viewDetails{
+        padding: 4px;
+        font-size: 18px;
+        margin-top: -3%;
+      }
+      .course_download{
+        padding: 0px;
+        font-size: 19px;
+      }
+   .card {
+        margin: 10px;
+      }
+      
+      .btn_courses{
+        filter: blur(0%);
+      }
+      .card :hover .btn_courses {
+        background-color:transparent;
+        backdrop-filter: blur(39px);
+      }
+      .course_container_card{
+        display: flex;
+        width: 100%;
+      }
+      .course_topic img {
+        width: 15rem;
+      }
+      .icons_btn span{
+        padding-right: 25px;
+      }
+}
+
+@media screen and (min-width:701px) and (max-width:1258px){
+    .course_banner_container {
+        margin-top: 5.9rem;
+        height: 39vh;
+      }
+      .course_top_para > div {
+        font-size: 32px;
+      }
+      .btn_group > div {
+        height: 4vh;
+        font-size: 15px;
+      }
+      .content_down{
+        margin-left: -12%;
+      }
+      .course_top_para {
+        margin-top: -7%;
+      }
+      .course_top_para:hover{
+        background-color:black;
+        opacity: 0.8;
+        color:whitesmoke;
+        text-shadow: none;
+        margin-top: 0%;
+    }
+    .all_courses {
+        padding-top: 10vh;
+      }
+      .courses_title {
+        font-size: 29px;
+      }
+      .course_viewDetails{
+        padding: 3px;
+        font-size: 19px;
+        margin-top:0px;
+      }
+      .course_download{
+        padding: 0;
+        font-size: 17px;
+      }
+      .card {
+        margin: 10px;
+      }
+      .btn_courses{
+        filter: blur(0%);
+      }
+      .card :hover .btn_courses {
+        background-color:transparent;
+        backdrop-filter: blur(39px);
+      }
+      .course_container_card{
+        display: flex;
+        width: 100%;
+      }
+      .course_topic img {
+        width: 100%;
+        width: 15rem;
+      }
+      .icons_btn span{
+        padding-right: 32px;
+      }
+}
+
+
