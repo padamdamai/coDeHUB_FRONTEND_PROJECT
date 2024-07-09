@@ -280,7 +280,29 @@
     height: 38%;
     width: 70%;
     padding-left: 32%;
+    animation: imageFlow 1s ease-out 1;
   }
+  .replacement_header_content {
+    padding: 29% 2%;
+    animation: textFlow ease-in-out 1s 1;
+  }
+  @keyframes textFlow {
+    from{
+        transform: translate(-920px,0px);   
+    }
+    to{
+        transform: translate(3px,0px);
+
+    }
+}
+@keyframes imageFlow {
+  from{
+      transform: translate(290rem,0px);   
+  }
+  to{
+      transform: translate(9px,0);
+  }
+}
   .replacement_company{
     margin-top: -23rem;
   }
@@ -364,12 +386,10 @@
 }
 @keyframes imageFlow {
   from{
-      transform: translate(920px,0px);
-      
+      transform: translate(290rem,0px);   
   }
   to{
       transform: translate(9px,0);
-
   }
 }
 .img_replaced_holder {
